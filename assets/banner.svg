@@ -1,0 +1,103 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#1a1310"/>
+<stop offset="50%" stop-color="#231710"/>
+<stop offset="100%" stop-color="#150f0c"/>
+</linearGradient>
+<radialGradient id="glow" cx="75%" cy="40%" r="60%">
+<stop offset="0%" stop-color="#e08a4f" stop-opacity="0.35"/>
+<stop offset="100%" stop-color="#e08a4f" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="clay" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#d97e4a"/>
+<stop offset="100%" stop-color="#a4502a"/>
+</linearGradient>
+<linearGradient id="clayShade" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#7a3a1f"/>
+<stop offset="100%" stop-color="#4a2413"/>
+</linearGradient>
+<linearGradient id="titlefade" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#fff3ea"/>
+<stop offset="100%" stop-color="#f2c9a0"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+<rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+<!-- Grid floor plane suggesting a sculpting viewport -->
+<g stroke="#3a2a1e" stroke-width="1" opacity="0.35">
+<line x1="0" y1="300" x2="1200" y2="300"/>
+<line x1="0" y1="315" x2="1200" y2="315"/>
+<line x1="0" y1="330" x2="1200" y2="330"/>
+<line x1="0" y1="345" x2="1200" y2="345"/>
+</g>
+
+<!-- Abstract sculpted bust silhouette on the right -->
+<g transform="translate(870,60)">
+<path d="M120 40
+  C160 40 190 75 195 120
+  C200 165 185 195 195 225
+  C205 255 190 275 150 285
+  C110 295 60 295 30 275
+  C0 255 5 225 15 195
+  C25 165 15 130 25 90
+  C35 55 80 40 120 40 Z"
+  fill="url(#clay)" opacity="0.92"/>
+<!-- sculpt facets -->
+<path d="M120 40 C160 40 190 75 195 120 C198 150 190 175 195 225 L150 210 L140 150 L155 90 Z" fill="url(#clayShade)" opacity="0.55"/>
+<path d="M30 275 C0 255 5 225 15 195 C25 165 15 130 25 90 L60 100 L55 170 L70 240 Z" fill="#2f1a10" opacity="0.4"/>
+<!-- tool marks -->
+<path d="M60 90 Q90 100 110 95" stroke="#f4c79a" stroke-width="2" fill="none" opacity="0.5"/>
+<path d="M50 140 Q90 155 130 145" stroke="#f4c79a" stroke-width="2" fill="none" opacity="0.4"/>
+<path d="M55 200 Q95 215 140 205" stroke="#f4c79a" stroke-width="2" fill="none" opacity="0.35"/>
+<path d="M70 250 Q110 260 150 250" stroke="#f4c79a" stroke-width="2" fill="none" opacity="0.3"/>
+<!-- eye sockets suggestion -->
+<ellipse cx="75" cy="115" rx="10" ry="6" fill="#2a160c" opacity="0.5"/>
+<ellipse cx="140" cy="112" rx="10" ry="6" fill="#2a160c" opacity="0.5"/>
+</g>
+
+<!-- Sculpting tool / chisel icon -->
+<g transform="translate(985,250)" opacity="0.9">
+<rect x="-6" y="-70" width="12" height="70" rx="3" fill="#c9c2b8"/>
+<polygon points="-10,-70 10,-70 0,-95" fill="#e8e2d8"/>
+<rect x="-14" y="-15" width="28" height="20" rx="4" fill="#6b4a2e"/>
+</g>
+
+<!-- Orbiting particle dots representing polygons/vertices -->
+<g fill="#e0965a">
+<circle cx="780" cy="90" r="3" opacity="0.7"/>
+<circle cx="820" cy="200" r="2.5" opacity="0.6"/>
+<circle cx="740" cy="250" r="2" opacity="0.5"/>
+<circle cx="1120" cy="120" r="3" opacity="0.6"/>
+<circle cx="1080" cy="290" r="2.5" opacity="0.5"/>
+<circle cx="950" cy="55" r="2" opacity="0.5"/>
+</g>
+<g stroke="#e0965a" stroke-width="1" opacity="0.25">
+<line x1="780" y1="90" x2="950" y2="55"/>
+<line x1="820" y1="200" x2="740" y2="250"/>
+<line x1="1120" y1="120" x2="1080" y2="290"/>
+</g>
+
+<!-- Left accent bar -->
+<rect x="60" y="118" width="6" height="90" fill="url(#clay)"/>
+
+<!-- Headline -->
+<text x="60" y="168" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="60" fill="url(#titlefade)" textLength="1000" lengthAdjust="spacingAndGlyphs">
+ZBrush Full Version Download
+</text>
+
+<!-- Tagline -->
+<text x="60" y="215" font-family="'Segoe UI', Arial, sans-serif" font-weight="400" font-size="24" fill="#d8b79a" textLength="880" lengthAdjust="spacingAndGlyphs">
+Enables pluggable full-version download access for the ZBrush ecosystem
+</text>
+
+<!-- Small badge/tag -->
+<g transform="translate(60,250)">
+<rect x="0" y="0" width="150" height="34" rx="17" fill="#2a1a10" stroke="#a4502a" stroke-width="1.5"/>
+<circle cx="20" cy="17" r="6" fill="#e0965a"/>
+<text x="36" y="22" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#f0d3b8">3D Sculpting Tool</text>
+</g>
+
+</svg>
